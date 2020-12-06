@@ -1,15 +1,13 @@
-/*
-COLORS:
-
-Light pink: #f9c6cf
-Medium pink: #ffb8c6
-Dark pink: #ff6781
-*/
-
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 67.5%;
 }
 
 body {
@@ -24,11 +22,11 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(218, 164, 171, 0.8),
-      rgba(223, 77, 101, 0.6)
-    ),
-    url(../img/computer.jpeg);
+    to right bottom,
+    rgba(218, 164, 171, 0.8),
+    rgba(223, 77, 101, 0.6)
+  ),
+  url(../img/computer.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -67,8 +65,8 @@ body {
 .heading-primary-main {
   display: block;
   font-size: 45px;
-  font-weight: 300;
-  letter-spacing: 16px;
+  font-weight: 200;
+  letter-spacing: 15px;
 
   animation-name: moveInLeft;
   animation-duration: 1.4s;
@@ -78,7 +76,7 @@ body {
 .heading-primary-sub {
   display: block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 12px;
   animation: moveInRight 1s ease-out;
 }

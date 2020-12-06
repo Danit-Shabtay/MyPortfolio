@@ -1,10 +1,10 @@
 {
-  "name": "MyPortfolio",
+  "name": "init",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/Danit-Shagan/MyPortfolio/issues"
   },
-  "homepage": "https://github.com/Danit-Shagan/MyPortfolio#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  }
+  "homepage": "https://github.com/Danit-Shagan/MyPortfolio#readme"
 }

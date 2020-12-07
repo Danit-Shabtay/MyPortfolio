@@ -4,7 +4,7 @@ $color-primary-dark: #ff6781;
 
 $color-grey-dark: #777;
 $color-white: #fff;
-
+$color-black: #000;
 
 *,
 *::after,
@@ -42,25 +42,26 @@ $color-white: #fff;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     /* Triangle shape */
     /* clip-path: polygon(50% 0, 100% 100%, 0 100%);*/
+
+    &logo-box {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+
+    &logo {
+      height: 35px;
+    }
+    
+    &text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
   }
   
-  .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-  }
-  
-  .logo {
-    height: 35px;
-  }
-  
-  .text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
   
   .heading-primary {
     color: $color-white;
@@ -73,8 +74,8 @@ $color-white: #fff;
   .heading-primary-main {
     display: block;
     font-size: 45px;
-    font-weight: 200;
-    letter-spacing: 15px;
+    font-weight: 250;
+    letter-spacing: 14px;
   
     animation-name: moveInLeft;
     animation-duration: 1.4s;
@@ -85,7 +86,7 @@ $color-white: #fff;
     display: block;
     font-size: 15px;
     font-weight: 800;
-    letter-spacing: 12px;
+    letter-spacing: 15px;
     animation: moveInRight 1s ease-out;
   }
   
@@ -151,12 +152,12 @@ $color-white: #fff;
   
   .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba($color-black,0.2);
   }
   
   .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba($color-black,0.2);
   }
   
   .btn-white {

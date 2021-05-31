@@ -10,6 +10,6 @@ Here you can see some of my projects that I’ve been working on in my academic 
 ---
 
 ### Demo
-<img src="img/DS.gif" height=350 width=650>
+<img src="img/DS.gif" height=370 width=650>
 
 ---
